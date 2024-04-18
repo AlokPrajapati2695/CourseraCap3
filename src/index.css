@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: Markazi;
+    src: url(./assets/fonts/Markazi_Text/static/MarkaziText-Medium.ttf);
+    font-weight: medium;
+}
+@font-face {
+    font-family: Karla;
+    src: url(./assets/fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+	user-select: none;
+}
+body {
+    background-color: rgb(237,239,238);
+}
+
+@media (min-width: 1024px) {
+    .grid-template-2{
+        grid-template-columns: 100pxfr 1fr 1fr 100px;
+    }
+    .grid-template-3{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
